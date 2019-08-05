@@ -1,0 +1,1 @@
+from . import qt05_QTabWidget

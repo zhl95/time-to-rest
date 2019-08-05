@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>684</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>30</y>
+      <width>861</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab_timer">
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <attribute name="title">
+      <string>timer</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>291</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Micro Break</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>226</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="Grid_micro_break">
+        <item row="0" column="3">
+         <widget class="QSpinBox" name="work_s_mic">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>break duration</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QSpinBox" name="post_m_mic">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QSpinBox" name="break_s_mic">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+          <property name="value">
+           <number>16</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSpinBox" name="post_h_mic"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QSpinBox" name="work_m_mic">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>work duration</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QSpinBox" name="post_s_mic">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QSpinBox" name="break_m_mic">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="work_h_mic"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>postpone time</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="break_h_mic"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>idle time</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSpinBox" name="idle_h_mic"/>
+        </item>
+        <item row="3" column="2">
+         <widget class="QSpinBox" name="idle_m_mic">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QSpinBox" name="idle_s_mic">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>30</y>
+        <width>291</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Macro Break</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>226</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="Grid_micro_break_3">
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>idle time</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QSpinBox" name="idle_m_mac">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSpinBox" name="idle_h_mac"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QSpinBox" name="work_m_mac">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QSpinBox" name="work_s_mac">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>work duration</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="break_h_mac"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>break duration</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>postpone time</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="work_h_mac"/>
+        </item>
+        <item row="2" column="3">
+         <widget class="QSpinBox" name="post_s_mac">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QSpinBox" name="break_s_mac">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QSpinBox" name="post_m_mac">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSpinBox" name="post_h_mac"/>
+        </item>
+        <item row="1" column="2">
+         <widget class="QSpinBox" name="break_m_mac">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QSpinBox" name="idle_s_mac">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>320</y>
+        <width>171</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Options</string>
+      </property>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>115</width>
+         <height>76</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QCheckBox" name="show_timer_cbox">
+          <property name="text">
+           <string>show timer</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="show_skip_cbox">
+          <property name="text">
+           <string>show skip</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="show_post_cbox">
+          <property name="text">
+           <string>show postpone</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="start_push">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>340</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>start</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="get_value_push">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>340</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>get values</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="save_push">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>390</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>save values</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>30</y>
+        <width>161</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Total daily</string>
+      </property>
+      <widget class="QTimeEdit" name="total_time">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>118</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="displayFormat">
+        <string>h:mm </string>
+       </property>
+       <property name="time">
+        <time>
+         <hour>10</hour>
+         <minute>0</minute>
+         <second>0</second>
+        </time>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_camera">
+     <attribute name="title">
+      <string>camera</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>70</y>
+        <width>291</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Sampling</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>235</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="Grid_micro_break_2">
+        <item row="0" column="2">
+         <widget class="QSpinBox" name="sample_period_m">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>sample period</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>sample duration</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="sample_period_h"/>
+        </item>
+        <item row="1" column="2">
+         <widget class="QSpinBox" name="sample_duration_m">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QSpinBox" name="sample_period_s">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QSpinBox" name="sample_duration_s">
+          <property name="maximum">
+           <number>59</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="sample_duration_h"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>70</y>
+        <width>371</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Algorithm</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>345</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="Grid_micro_break_4">
+        <item row="0" column="2">
+         <widget class="QRadioButton" name="rbut_cf">
+          <property name="text">
+           <string>caffe</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QDoubleSpinBox" name="param_box_tf">
+          <property name="maximum">
+           <double>1.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QSpinBox" name="post_m_mic_3">
+          <property name="maximum">
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QSpinBox" name="post_s_mic_3"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>parameter</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QRadioButton" name="rbut_tf">
+          <property name="text">
+           <string>tensorflow</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Algorithm</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QRadioButton" name="rbut_haar">
+          <property name="text">
+           <string>haaris</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>image</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QDoubleSpinBox" name="img_resize_box">
+          <property name="maximum">
+           <double>1.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="take_pic_push">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>340</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>take a picture</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="save_pic_push">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>410</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>save picture</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="take_vid_push">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>340</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>take a vid</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="save_vid_push">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>410</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>save vid</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="vid_view">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>330</y>
+        <width>291</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="det_check">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>400</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>detect</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="test_cam_check">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>350</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>test cam</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_misc">
+     <attribute name="title">
+      <string>misc</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>90</y>
+        <width>291</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Sampling</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>235</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="Grid_micro_break_5">
+        <item row="0" column="2">
+         <widget class="QSpinBox" name="work_m_mic_3"/>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>sample period</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>sample duration</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="work_h_mic_3"/>
+        </item>
+        <item row="1" column="2">
+         <widget class="QSpinBox" name="post_m_mic_4"/>
+        </item>
+        <item row="0" column="3">
+         <widget class="QSpinBox" name="work_s_mic_3"/>
+        </item>
+        <item row="1" column="3">
+         <widget class="QSpinBox" name="post_s_mic_4"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="post_h_mic_3"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QLCDNumber" name="lcdNumber">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>340</y>
+        <width>64</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="smallDecimalPoint">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="lcdNumber_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>340</y>
+        <width>64</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="lcdNumber_3">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>340</y>
+        <width>64</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>400</y>
+        <width>118</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+      <property name="invertedAppearance">
+       <bool>false</bool>
+      </property>
+      <property name="format">
+       <string>%p%</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
